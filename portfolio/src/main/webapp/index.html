@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="script.js"></script>
   </head>
   <body>
+    <div class="navbar">
+        <button class="navbar_button" onClick=location.href="pages/Contact.html"><i class="material-icons">email</i></button>
+        <button class="navbar_button" onClick=location.href="https://github.com/dsmith35"><img src="../images/github.png" style="width:24px;height:24px;"/></button>
+    </div>
     <div id="content">
       <h1>Dylan's Portfolio</h1>
       <p>Hey! I'm Dylan, and this is my portfolio!</p>
@@ -15,8 +20,9 @@
       <p>I'm from Toronto, Canada and I'm working towards a computer science degree. In my spare time I enjoy biking, playing games (Recently been playing an indie game called Death's Door), and learning about/coding up anything I think is interesting.</p>
       <p>There may be a lack of content on here right now, but I will update this portfolio frequently over the next couple days.</p>
       <p>And here is a picture of my dog lying down on my bed.</p>
-      <img src="/images/doggo.jpg" width="400" height="500" />/>
+      <img src="../images/doggo.jpg" width="400" height="500" />/>
       <p> Alright, that's all for now!</p>
+      <button class="next_page_btn" onClick=location.href="pages/Projects.html">See my Projects!</button>
     </div>
   </body>
 </html>

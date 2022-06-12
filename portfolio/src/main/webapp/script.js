@@ -27,10 +27,15 @@ function addRandomGreeting() {
   greetingContainer.innerText = greeting;
 }
 
-async function getNewPalette() {
-    const responseFromServer = await fetch('/palette');
-    const textFromResponse = await responseFromServer.text();
-  
-    const container = document.getElementById('yuy-container');
-    container.innerText = textFromResponse;
+async function getEmoji() {
+    const responseFromServer = await fetch('/emoji');
+    const emoji_list = await responseFromServer.json()
+    rand_num = Math.floor(Math.random() * emoji_list.length);
+    
+    const container = document.getElementById('emoji-container');
+    container.innerText = String.fromCodePoint(emoji_list[rand_num]);
+}
+
+function redirectToSplashPage() {
+    location.href="pages/Splash.html"
 }

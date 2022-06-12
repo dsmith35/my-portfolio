@@ -1,12 +1,28 @@
-<h2>Send an e-mail to dsmith@sps-program.com:</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="../script.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+        <button class="navbar_button" onClick=location.href="pages/Contact.html"><i class="material-icons">email</i></button>
+        <button class="navbar_button" onClick=location.href="https://github.com/dsmith35"><img src="../images/github.png" style="width:24px;height:24px;"/></button>
+        <nobr id="emoji-container">
+        <button onClick="getEmoji()">
+        Emoji of the Day
+        </button>
+    </div>
 
-<form action="mailto:dsmith@sps-program.com" method="post" enctype="text/plain">
-Name:<br>
-<input type="text" name="name"><br>
-E-mail:<br>
-<input type="text" name="mail"><br>
-Comment:<br>
-<input type="text" name="comment" size="50"><br><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
-</form>
+    <form method="POST" action="/form-handler">
+      <h1>Leave a message here.</h1>
+      <p>(Provide your email address if you want a reply)</p>
+      <textarea name="text-input" placeholder="Your Message"></textarea>
+      <br/>
+      <input type="submit" />
+    </form>
+  </body>
+</html>

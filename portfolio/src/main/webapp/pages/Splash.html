@@ -9,17 +9,19 @@
   </head>
   <body>
     <div class="navbar">
-        <button class="navbar_button" onClick=location.href="pages/Contact.html"><i class="material-icons">email</i></button>
-        <button class="navbar_button" onClick=location.href="https://github.com/dsmith35"><img src="../images/github.png" style="width:24px;height:24px;"/></button>
-        <nobr id="emoji-container">
-        <button onClick="getEmoji()">
-          Emoji of the Day
-        </button>
+        <button class="navbar-button" onClick=location.href="Contact.html"><i class="material-icons">email</i></button>
+        <button class="navbar-button" onClick=location.href="https://github.com/dsmith35"><img src="../images/github.png" style="width:24px;height:24px;"/></button>
+        <button class=navbar-button2  onClick=location.href="Splash.html">Splash</button>
+        <button class=navbar-button2  onClick=location.href="Projects.html">Projects</button>
+        <button class=navbar-button2  onClick=location.href="Gallery.html">Gallery</button>
+        <nobr id="emoji-container"></nobr>
+        <button class="navbar-button2" onClick="getEmoji()">Emoji of the Day</button>
     </div>
-    <div class="content" id=splash-text>
+    <div id=splash-text>
       <h1>Hi, I'm Dylan</h1>
-      <p>bruh</p>
+      <p>I'm from Toronto, Canada and I'm working towards a computer science degree. In my spare time I enjoy biking, playing games, and learning new things. </p>
     </div>
+    <img id="splash-photo" src="../images/portfolio_pic.jpg">
     <button class="next_page_btn" id="splash-nxt-pg-btn" onClick=location.href="Projects.html">See my Projects!</button>
   </body>
 </html>

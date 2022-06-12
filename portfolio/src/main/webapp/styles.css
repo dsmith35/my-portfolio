@@ -11,7 +11,7 @@ h1 {
     font-size: 50px;
 }
 p {
-    color:grey;
+    color:#8a8a8a;
     font-size: 20px;
 }
 
@@ -23,7 +23,7 @@ body {
   margin-top: 20px;
 }
 
-.navbar_button {
+.navbar-button {
     background-color: #1a6278;
     border: none;
     color: white;
@@ -31,8 +31,24 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
-.navbar_button:hover {
+.navbar-button:hover {
     background-color: #144757;
+}
+.navbar-button2 {
+    background-color: transparent;
+    border: none;
+    color: #8a8a8a;
+    font-size: 16px;
+    cursor: pointer;
+}
+.navbar-button2:hover {
+    background-color: transparent;
+    border: none;
+    border-radius:50px;
+    color: #BaBaBa;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px white;
 }
 
  .navbar {
@@ -41,12 +57,19 @@ body {
  }
 
  .next_page_btn {
-    background-color: teal;
+    background-color: #1a6278;
     color: white;
     border: none;
     font-size: 20px;
     padding: 5px;
+    border-radius:10px;
+    box-shadow: 0px 0px 10px #585858;
  }
  .next_page_btn:hover {
-    background-color: darkslategray;
+    background-color: #144757;
+    box-shadow: 0px 0px 15px #888888;
+ }
+
+ #emoji-container {
+     font-size:30px;
  }

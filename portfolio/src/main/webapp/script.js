@@ -26,3 +26,29 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+async function getEmoji() {
+    const responseFromServer = await fetch('/emoji');
+    const emoji_list = await responseFromServer.json()
+    rand_num = Math.floor(Math.random() * emoji_list.length);
+    
+    const container = document.getElementById('emoji-container');
+    container.innerText = String.fromCodePoint(emoji_list[rand_num]);
+}
+
+async function getGalleryPhotos() {
+    const responseFromServer = await fetch('/gallery');
+    const container = document.getElementById('gallery-container');
+    const photos = await responseFromServer.json()
+    for (let i = 0; i < photos.length; i++) {
+        const newImg = document.createElement("img");
+        newImg.src = "../images/gallery/"+photos[i];
+        newImg.width = 300;
+        newImg.height = 400;
+        container.appendChild(newImg);
+    }
+}
+
+function redirectToSplashPage() {
+    location.href="pages/Splash.html"
+}

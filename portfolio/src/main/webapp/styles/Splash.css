@@ -1,0 +1,23 @@
+#splash-text {
+    position: absolute;
+    left:10%;
+    top:35%;
+    width:500px;
+    height: 400px;
+    line-height: 1.6;
+}
+#splash-nxt-pg-btn {
+    position: absolute;
+    left:42%;
+    top:85%;
+}
+
+#splash-photo {
+    position: absolute;
+    left:60%;
+    top:30%;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 20px grey;
+}

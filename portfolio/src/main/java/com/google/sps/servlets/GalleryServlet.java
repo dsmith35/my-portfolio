@@ -16,7 +16,8 @@ public class GalleryServlet extends HttpServlet {
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     response.setContentType("text/html;");
-    File folder = new File("/home/dsmith/software-product-sprint/portfolio/src/main/webapp/images/gallery");
+    
+    File folder = new File("src/main/webapp/images/gallery");
     File[] listOfFiles = folder.listFiles();
     ArrayList<String> fileNames = new ArrayList<>();
     for (int i = 0; i < listOfFiles.length; i++) {

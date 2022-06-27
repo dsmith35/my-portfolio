@@ -14,7 +14,7 @@ public class EmojiServlet extends HttpServlet {
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     response.setContentType("text/html;");
-    String[] emojiList = {"0x1F600", "0x1F606","0x1F607","0x1F634","0x1F973"};
+    String[] emojiList = {"0x1F600", "0x1F606","0x1F607","0x1F634","0x1F973","0x1F61C","0x1F60E","0x1F929"};
     String json = convertToJsonUsingGson(emojiList);
     response.getWriter().println(json);
   }

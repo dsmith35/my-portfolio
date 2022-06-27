@@ -49,6 +49,18 @@ async function getGalleryPhotos() {
     }
 }
 
+async function getMessages() {
+    const responseFromServer = await fetch('/list-messages');
+    const container = document.getElementById('messages-container');
+    const entries = await responseFromServer.json()
+    for (let i = 0; i < entries.length; i++) {
+        const newMsg = document.createElement("div");
+        newMsg.classList.add("message")
+        newMsg.textContent = entries[i].msg;
+        container.appendChild(newMsg);
+    }
+}
+
 function redirectToSplashPage() {
     location.href="pages/Splash.html"
 }

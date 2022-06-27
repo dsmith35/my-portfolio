@@ -6,8 +6,8 @@
     border: none;
 }
 .projects-btn:hover {
-    width: 42%;
-    height: 21%;
+    background-color: #fff;
+    padding: 4px;
 }
 
 .projects-btn-img {

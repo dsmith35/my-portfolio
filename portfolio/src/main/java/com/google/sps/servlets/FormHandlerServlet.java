@@ -19,12 +19,14 @@ public class FormHandlerServlet extends HttpServlet {
 
     // Get the value entered in the form.
     String textValue = request.getParameter("text-input");
+    long timestamp = System.currentTimeMillis();
 
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
     KeyFactory keyFactory = datastore.newKeyFactory().setKind("Task");
     FullEntity taskEntity =
         Entity.newBuilder(keyFactory.newKey())
-            .set("title", textValue)
+            .set("text", textValue)
+            .set("timestamp", timestamp)
             .build();
     datastore.put(taskEntity);
 
